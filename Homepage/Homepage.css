@@ -1,0 +1,96 @@
+        .title{
+            text-align: center;
+        }
+        /*side navigation menu*/
+        .sidenav {
+            height: 100%;
+            width: 0; /* Initially hidden */
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 60px;
+            transition: 0.5s;
+        }
+        .sidenav a{
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #988e8e;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidenav a:hover{
+            color: hsl(0, 22%, 96%);
+        }
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+            cursor: pointer;
+        }
+
+        #preface{
+            height: 40vh;
+            width: 100%;
+            background-color: rgb(97, 190, 153);
+            text-align: center;
+            padding: 0%;
+            margin:0%
+        }
+        #content{
+            transition: margin-left 0.5s;
+            padding: 20px;
+                }
+        #nav_lines{
+          width: 30px;
+          font-size: 30px;
+          color: rgb(141, 128, 128);
+          cursor: pointer;
+          background-color: rgba(40, 40, 30, 0.1);
+        }
+        #footer{
+            display: flex;
+            justify-content: space-between;
+            background-color: #585757;
+            color: rgb(236, 225, 225);
+            padding: 0;
+            width: 100%;
+        }
+
+        .footer-section {
+            flex: 1;
+            text-align: center;
+            padding: 0;
+        }
+        
+        .footer-section:not(:last-child) {
+            border-right: 4px solid black;  
+      }  
+
+      .footer-section li{
+        list-style: none;
+    }
+    
+    .footer-section ul li{
+        margin: 10px 0;
+    }
+    
+    .footer-section ul li:last-child{
+        margin-bottom: 50px;
+    }
+    
+    .footer-section ul li a{
+        text-decoration: none;
+        color: rgb(197, 193, 191);
+        padding: 6px;
+    }
+    
+    .footer-section ul li a:hover{
+        color: white;
+    }
+
