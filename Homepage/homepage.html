@@ -1,83 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>HomepageLive</title>
- <!-- <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css"> -->
- <link rel="stylesheet" href="./Homepage.css">
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liveweb - Explore the World</title>
+  <link rel="stylesheet" href="homepage.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
- <main>
-  <header class="header">
-   <div class="title">
-    <h1>Liveweb city tour</h1>
-   </div>
-  </header>
-   <div id="mySidenav" class="sidenav">
-     <a class="closebtn" onclick="closeNav()">×</a>
-     <a href="https://www.siyabona.com/cities-in-kenya.html">Cities</a>
-     <a href="https://wa.me/qr/2J7SXBJQDECRK1">Games</a>
-     <a href="#">Coders</a>
-     <a href="#">Commercial</a>
-     <a href="#">Restaurants</a>
-     <a href="#">Adventure</a>
-     <a href="#">Portfolio</a>
-   </div>
-
-   <span onclick="openNav()"><div id="nav_lines">☰</div></span>
-   <main id="content">
-    <div><div id="preface">
-      <p>Build your dream home wherever you want on the planet</p>
-      <p>Liveweb Brings you all you need to construct a plan for your future, and your family</p>
+  <header class="main-header">
+    <div class="logo">
+      <h1>Liveweb</h1>
+    </div>
+    <div class="header-controls">
+      <div class="menu-toggle" onclick="toggleSidebar()">
+        <span class="menu-icon">&#9776;</span>
+        <span class="menu-text"></span>
       </div>
-      <p>From acrosss the entire earth, liveweb brings you the best experience to develop yourself by learning different cultures and having a comprehensive knowledge of our sphere.
-        Be at ease and enjoy the diversity and knowledge that we impart in you.
-        Togeteher as a team of developers, we have collaborated and are echoing the sound of all the magnificence of our beatiful planet.</p>
-
-        <wrapper class="wrapper">
-          <figure class="city-display"><figcaption></figcaption></figure>
-          <figure class="city-display"><figcaption></figcaption></figure>
-          <figure class="city-display"><figcaption></figcaption></figure>
-          <figure class="city-display"><figcaption></figcaption></figure>
-          <figure class="city-display"><figcaption></figcaption></figure>
-          <figure class="city-display"><figcaption></figcaption></figure>
-
-        </wrapper>
-        
+      <div class="login-icon" onclick="toggleLoginForm()">
+        <i class="fas fa-user-circle"></i>
+      </div>
     </div>
-    <div>
-  
+  </header>
+
+  <aside class="sidebar" id="sidebar">
+    <a href="#" class="closebtn" onclick="toggleSidebar()">&times;</a>
+    <a href="#">Cities</a>
+    <a href="#">Games</a>
+    <a href="#">Coders</a>
+    <a href="#">Commercial</a>
+    <a href="#">Restaurants</a>
+    <a href="#">Adventure</a>
+    <a href="#">Portfolio</a>
+  </aside>
+
+  <div class="login-popup" id="loginPopup">
+    <div class="login-form">
+      <h3>Login</h3>
+      <input type="text" placeholder="Username" />
+      <input type="password" placeholder="Password" />
+      <button>Submit</button>
+      <span class="close" onclick="toggleLoginForm()">&times;</span>
     </div>
+  </div>
+
+  <main class="main-content">
+    <section class="hero">
+      <h2>Explore the World from Your Screen</h2>
+      <p>Liveweb lets you tour cities, experience cultures, and dream big — all virtually.</p>
+    </section>
+
+    <section class="features">
+      <div class="feature-box">
+        <i class="fas fa-city"></i>
+        <h3>Virtual City Tours</h3>
+        <p>Explore top cities with interactive tours and real-time experiences.</p>
+      </div>
+      <div class="feature-box">
+        <i class="fas fa-utensils"></i>
+        <h3>Global Cuisine</h3>
+        <p>Discover famous restaurants and taste the world, virtually.</p>
+      </div>
+      <div class="feature-box">
+        <i class="fas fa-hiking"></i>
+        <h3>Adventure Awaits</h3>
+        <p>Experience exciting destinations and thrilling adventures online.</p>
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>About Liveweb</h2>
+      <p>Liveweb is built by explorers, for explorers. Our goal is to connect people to the world in immersive and interactive ways — from anywhere.</p>
+    </section>
   </main>
-  <footer id="footer">
-    <div class="footer-section">
-        <h4>Quick links</h4>
-            <ul>
-                <li><a href="#section1">Section 1 </a></li>
-                <li><a href="#section2">Section 2</a></li>
-                <li><a href="#section3">Section 3</a></li>
-                <li><a href="#section4">Section 4</a></li>
-            </ul>
-    </div>
-    <div class="footer-section">
-        <h4>More info</h4>
-        <ul>
-            <li><a href="#section1">Reviews</a></li>
-            <li><a href="#section3">Join our team</a></li>
-            <li><a href="#section2">Report an issue</a></li>
-            <li><a href="#section4">Terms and Conditions</a></li>
-        </ul>
-    </div>
-    <div class="footer-section">
-        <p>Mesh_photography&trade; </p>
-        <p>#Love your taste</p>
-        <p>Tel: +254xxxxxx</p>
-        <p>&copy;2024</p>
-    </div>
-</footer>
- </main>
- <script src="homepage.js"></script>
+
+  <footer class="footer">
+    <p>&copy; 2024 Liveweb. All rights reserved.</p>
+  </footer>
+
+  <script src="homepage.js"></script>
 </body>
 </html>

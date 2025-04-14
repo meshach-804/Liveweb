@@ -1,11 +1,11 @@
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("content").style.marginLeft = "240px";
-    document.getElementById("content").style.transition = "0s";
+// Sidebar toggle
+function toggleSidebar() {
+  const sidebar = document.getElementById("sidebar");
+  sidebar.classList.toggle("open");
+}
 
-  }
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("content").style.marginLeft = "0";
-
-  }
+// Login popup toggle
+function toggleLoginForm() {
+  const loginPopup = document.getElementById("loginPopup");
+  loginPopup.classList.toggle("show");
+}
