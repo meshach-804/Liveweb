@@ -1,0 +1,108 @@
+/* Hero Section */
+.hero {
+  background: url('../Images/adventure-background.jpeg') center/cover no-repeat;
+  text-align: center;
+  padding: 120px 20px;
+  color: rgb(33, 52, 40);
+  animation: zoomIn 3s ease-in-out;
+}
+
+/* Search Section */
+.search-section {
+  text-align: center;
+  margin: 20px;
+}
+
+#searchInput {
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Filters Section */
+.filters {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  margin: 5px;
+  background: #2980b9;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.filter-btn:hover {
+  background: #3498db;
+}
+
+/* Adventure Cards Section */
+.adventure-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  width: 300px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 15px;
+  font-size: 20px;
+}
+
+.card p {
+  padding: 0 15px 15px;
+  color: #555;
+}
+
+.card a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  background: #16a085;
+  color: white;
+  text-decoration: none;
+  border-radius: 0 0 12px 12px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer Section */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #2c3e50;
+  color: white;
+  margin-top: 40px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .adventure-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}

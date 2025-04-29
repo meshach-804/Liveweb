@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LiveWeb - Adventure</title>
+  <link rel="stylesheet" href="adventure.css">
+  <link rel="stylesheet" href="../Header/header.css">
+</head>
+
+<body>
+  <!-- Placeholder for header -->
+ <div id="header-placeholder"></div>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h2>Embark on Your Next Adventure</h2>
+      <p>Discover thrilling activities around the globe!</p>
+    </section>
+    <!-- Search Input Section -->
+    <section class="search-section">
+      <input type="text" id="searchInput" placeholder="Search for an adventure...">
+    </section>
+
+    <!-- Filters Section -->
+    <section class="filters">
+      <button type="button" title="all-adventures" class="filter-btn" data-filter="all" aria-label="Show all adventures">All</button>
+      <button type="button" title="hiking-adventure" class="filter-btn" data-filter="hiking" aria-label="Show hiking adventures">Hiking</button>
+      <button type="button" title="skydiving-adventures" class="filter-btn" data-filter="skydiving" aria-label="Show skydiving adventures">Skydiving</button>
+      <button type="button" title="safari-adventure" class="filter-btn" data-filter="safari" aria-label="Show safari adventures">Safari</button>
+      <button type="button" title="scuba-adventure" class="filter-btn" data-filter="scuba" aria-label="Show scuba diving adventures">Scuba Diving</button>
+    </section>
+    
+    <!-- Adventure Cards Section -->
+    <section class="adventure-cards" id="adventureCards">
+
+      <!-- Hiking Adventure Card -->
+      <div class="card" data-category="hiking">
+        <img src="../Images/switzerland-alps.jpeg" alt="Mountain hiking in Switzerland" class="card-img">
+        <h3>Mountain Hiking, Switzerland</h3>
+        <p>Explore the majestic Swiss Alps with guided hikes.</p>
+        <a href="#" class="card-btn">Book Now</a>
+      </div>
+
+      <!-- Skydiving Adventure Card -->
+      <div class="card" data-category="skydiving">
+        <img src="../Images/dubai-skydiving.jpg" alt="Skydiving in Dubai over Palm Jumeirah" class="card-img">
+        <h3>Skydiving, Dubai</h3>
+        <p>Feel the adrenaline rush over the iconic Palm Jumeirah.</p>
+        <a href="#" class="card-btn">Experience It</a>
+      </div>
+
+      <!-- Safari Adventure Card -->
+      <div class="card" data-category="safari">
+        <img src="../Images/serengeti-safari.jpeg" alt="Safari in Serengeti, Tanzania" class="card-img">
+        <h3>Serengeti Safari, Tanzania</h3>
+        <p>Witness the majestic wildlife in their natural habitat.</p>
+        <a href="#" class="card-btn">Join Safari</a>
+      </div>
+
+      <!-- Scuba Diving Adventure Card -->
+      <div class="card" data-category="scuba">
+        <img src="../Images/scuba-diving.jpeg" alt="Scuba diving at the Great Barrier Reef" class="card-img">
+        <h3>Scuba Diving, Great Barrier Reef</h3>
+        <p>Swim among vibrant coral reefs and marine life.</p>
+        <a href="#" class="card-btn">Dive In</a>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>&copy; 2025 LiveWeb. Adventure Awaits!</p>
+  </footer>
+
+  <script src="adventure.js" defer></script>
+  <script src="../Header/header.js" defer></script>
+
+
+</body>
+
+</html>

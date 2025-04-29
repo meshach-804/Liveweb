@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cultural Hub | LiveWeb</title>
+
+  <!-- Montserrat for modern typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="culture.css">
+  <link rel="stylesheet" href="../Header/header.css">
+
+</head>
+<body>
+
+ <!-- Placeholder for header -->
+ <div id="header-placeholder"></div>
+  <!-- Hero + Search -->
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Immerse in Global Cultures</h1>
+      <p>Discover festivals, cuisines, art & traditions from around the world.</p>
+      <div class="search-bar">
+        <input
+          type="text"
+          id="seachInput"
+          placeholder="Search cultures…"
+        >
+        <button type="button" title="search-button" id="searchBtn" type="button">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Filter -->
+  <section class="categories">
+    <button type="button" data-type="all" class="cat-btn active">
+      <i class="fas fa-globe"></i><span>All</span>
+    </button>
+    <button type="button" data-type="festival" class="cat-btn">
+      <i class="fas fa-beer-mug-empty"></i><span>Festivals</span>
+    </button>
+    <button type="button" data-type="cuisine" class="cat-btn">
+      <i class="fas fa-utensils"></i><span>Cuisine</span>
+    </button>
+    <button type="button" data-type="art" class="cat-btn">
+      <i class="fas fa-palette"></i><span>Art & Music</span>
+    </button>
+    <button type="button" data-type="tradition" class="cat-btn">
+      <i class="fas fa-users"></i><span>Traditions</span>
+    </button>
+  </section>
+
+  <!-- Dynamic Grid -->
+  <main>
+    <section class="grid" id="gridContainer">
+      <!-- JS will inject cards here -->
+    </section>
+  </main>
+
+  <!-- Metrics -->
+  <section class="metrics">
+    <div><h3>1M+</h3><p>Tours Completed</p></div>
+    <div><h3>120+</h3><p>Countries Covered</p></div>
+    <div><h3>4.8 ★</h3><p>User Rating</p></div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>What Our Explorers Say</h2>
+    <blockquote>
+      “LiveWeb’s cultural hub brought traditions to life like never before.”<br>
+      <cite>– Alex M.</cite>
+    </blockquote>
+    <blockquote>
+      “I cooked sushi right alongside a master chef—amazing!”<br>
+      <cite>– Priya S.</cite>
+    </blockquote>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <h2>Why LiveWeb?</h2>
+    <div class="feature-cards">
+      <div class="feature">
+        <i class="fas fa-vr-cardboard"></i>
+        <h3>360° Tours</h3>
+        <p>Interactive panoramas.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-globe-americas"></i>
+        <h3>Global Reach</h3>
+        <p>All continents covered.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Safe & Free</h3>
+        <p>No downloads or fees.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <h2>Stay Updated</h2>
+    <form id="newsletterForm">
+      <input
+        type="email"
+        id="newsletterEmail"
+        placeholder="you@example.com"
+        required
+      >
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <h2>FAQ</h2>
+    <details>
+      <summary>How do I start a tour?</summary>
+      <p>Hit “View Details” on any card to begin.</p>
+    </details>
+    <details>
+      <summary>Is it free?</summary>
+      <p>Yes—our virtual tours are 100% free with no signup required.</p>
+    </details>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2025 LiveWeb. All rights reserved.</p>
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <script src="culture.js" defer></script>
+  <script src="../Header/header.js"></script>
+</body>
+</html>

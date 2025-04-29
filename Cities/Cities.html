@@ -1,15 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cities</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>City Tour | LiveWeb</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"> <!-- Google Font :contentReference[oaicite:4]{index=4} -->
+  <link rel="stylesheet" href="cities.css">
+  <link rel="stylesheet" href="../Header/header.css">
+
 </head>
 <body>
-    <div>
-     <p>Within the beauty of nature around us lies your best match. Here is yourf first step in finding your dream home</p>
-     <p>Dive into our amazing website which brings you all the information you need ranging from weather, entertainment and many more to startyour dream home and perfect it!</p>
+
+   <!-- Placeholder for header -->
+ <div id="header-placeholder"></div>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Discover Your Next Destination</h1>
+      <p>Immersive, 360° virtual tours of the world’s greatest cities—no downloads required.</p>
+      <a href="#cityContainer" class="btn-primary">Start Free Tour</a>
     </div>
-    
+  </header>
+
+  <!-- Search & Filter Controls -->
+  <section class="controls">
+    <input type="text" id="searchInput" placeholder="Search cities…" />
+    <select type="button" title="search-region" id="regionFilter">
+      <option value="all">All Regions</option>
+      <option value="africa">Africa</option>
+      <option value="europe">Europe</option>
+      <option value="asia">Asia</option>
+      <option value="americas">Americas</option>
+    </select>
+  </section>
+
+  <!-- Dynamic City Grid -->
+  <main>
+    <section class="city-grid" id="cityContainer">
+      <!-- Injected by JS -->
+    </section>
+  </main>
+
+  <!-- Key Metrics -->
+  <section class="metrics">
+    <div class="metric">
+      <h3>1M+</h3>
+      <p>Tours Completed</p>
+    </div>
+    <div class="metric">
+      <h3>120+</h3>
+      <p>Countries Covered</p>
+    </div>
+    <div class="metric">
+      <h3>4.8 ★</h3>
+      <p>User Rating</p>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>What Our Explorers Say</h2>
+    <blockquote>
+      “LiveWeb’s tours feel so real, I almost packed my bags!”<br>
+      <cite>– Alex M., Travel Blogger</cite>
+    </blockquote>
+    <blockquote>
+      “A fantastic way to preview destinations before planning my trips.”<br>
+      <cite>– Priya S., Digital Nomad</cite>
+    </blockquote>
+  </section>
+
+  <!-- Why LiveWeb? -->
+  <section class="features">
+    <h2>Why LiveWeb?</h2>
+    <div class="feature-cards">
+      <div class="feature">
+        <i class="fas fa-vr-cardboard"></i>
+        <h3>360° Immersion</h3>
+        <p>Feel like you’re there with interactive panoramas.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-globe-americas"></i>
+        <h3>Global Reach</h3>
+        <p>Tour top cities across six continents.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Safe & Free</h3>
+        <p>No downloads or fees—just click and explore.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Sign-Up -->
+  <section class="newsletter">
+    <h2>Stay in the Loop</h2>
+    <p>Get exclusive tour previews and insider travel tips.</p>
+    <form id="newsletterForm">
+      <input type="email" id="newsletterEmail" placeholder="you@example.com" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 LiveWeb. All rights reserved.</p>
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <script src="cities.js"></script>
+  <script src="../Header/header.js"></script>
 </body>
 </html>

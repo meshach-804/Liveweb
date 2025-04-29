@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header</title>
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo"><a href="../Homepage/homepage.html">LiveWeb</a></div>
+    <nav class="site-nav">
+      <a href="../Homepage/homepage.html">Home</a>
+      <a href="../Culture/culture.html">Cultural Hub</a>
+      <a href="../Cities/cities.html">City Tours</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-controls">
+      <div class="menu-icon" onclick="toggleSidebar()">
+        <span>&#9776;</span>
+      </div>
+      <div class="login-icon" onclick="toggleLoginForm()">
+        <i class="fas fa-user-circle"></i>
+      </div>
+    </div>
+  </header>
+
+  <aside class="sidebar" id="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">&times;</a>
+    <a href="../Homepage/homepage.html">Home</a>
+    <a href="../Cities/cities.html">Cities</a>
+    <a href="../Culture/culture.html">Cultures</a>
+    <a href="../Commerce/commerce.html">Commercial</a>
+    <a href="../Restaurant/restaurant.html">Restaurants</a>
+    <a href="../Adventure/adventure.html">Adventure</a>
+    <a href="../Portfolio/portfolio.html">Portfolio</a>
+    <a href="../Login/login.html">Login</a>
+
+  </aside>
+
+  <div class="login-popup" id="loginPopup">
+    <div class="login-form">
+      <h3>Login</h3>
+      <input type="text" placeholder="Username" />
+      <input type="password" placeholder="Password" />
+      <button type="submit">Submit</button>
+      <span class="close" onclick="toggleLoginForm()">&times;</span>
+    </div>
+  </div>
+
+  <script src="header.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liveweb - Commercial</title>
+  <link rel="stylesheet" href="commerce.css">
+  <link rel="stylesheet" href="../Header/header.css">
+</head>
+<body>
+
+  <!-- Placeholder for header -->
+ <div id="header-placeholder"></div>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <section class="hero">
+      <h2>Explore Commercial Opportunities</h2>
+      <p>Find real estate, services, shops and more globally!</p>
+    </section>
+
+    <section class="filters">
+      <button type="button" title="All" class="filter-btn" data-filter="all">All</button>
+      <button type="button" title="Shops" class="filter-btn" data-filter="shops">Shops</button>
+      <button type="button" title="Services" class="filter-btn" data-filter="services">Services</button>
+      <button type="button" title="Real estate" class="filter-btn" data-filter="real-estate">Real Estate</button>
+    </section>
+
+    <section class="commercial-cards" id="commercialCards">
+
+      <!-- Cards -->
+      <div class="card" data-category="real-estate">
+        <img src="../Images/maldives.jpeg" alt="Luxury Villa">
+        <h3>Luxury Villa,<br> Maldives</h3>
+        <p>Buy or rent luxury oceanfront villas in the Maldives.</p>
+        <a href="#">Learn More</a>
+      </div>
+
+      <div class="card" data-category="shops">
+        <img src="../Images/milan-boutique.jpg" alt="Fashion Store">
+        <h3>Fashion Boutique,<br> Milan</h3>
+        <p>Explore high-end fashion boutiques and shopping streets.</p>
+        <a href="#">Learn More</a>
+      </div>
+
+      <div class="card" data-category="services">
+        <img src="../Images/business.jpeg" alt="Business Service">
+        <h3>Global Business Consultancy</h3>
+        <p>Expand your company globally with expert advice.</p>
+        <a href="#">Learn More</a>
+      </div>
+
+      <div class="card" data-category="real-estate">
+        <img src="../Images/downtown-apartments.jpeg" alt="Downtown Apartments">
+        <h3>Downtown Apartments, NYC</h3>
+        <p>Find premium apartments in New York City downtown.</p>
+        <a href="#">Learn More</a>
+      </div>
+
+      <div class="card" data-category="shops">
+        <img src="../Images/artisan.jpg" alt="Artisan Shops">
+        <h3>Artisan Shops,<br> Marrakech</h3>
+        <p>Visit Moroccan souks full of crafts and culture.</p>
+        <a href="#">Learn More</a>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer (Shared) -->
+  <footer class="footer">
+    <p>&copy; 2025 LiveWeb. Discover your world.</p>
+  </footer>
+  <script src="commerce.js"></script>
+  <script src="../Header/header.js"></script>
+</body>
+</html>

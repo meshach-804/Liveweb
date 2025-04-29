@@ -1,0 +1,280 @@
+:root {
+  --primary: #ff6b6b;
+  --dark: #203a43;
+  --light-bg: #f2f2f2;
+  --text: #333;
+  --shadow: rgba(0,0,0,0.1);
+  --font: 'Montserrat', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+
+body {
+  background: var(--light-bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Hero */
+.hero {
+  background: url('../Images/culture-background.jpg') center/cover no-repeat;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero-inner {
+  position: relative;
+  color: #fff;
+  max-width: 700px;
+  padding: 0 1rem;
+}
+
+.hero-inner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-inner p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.search-bar {
+  display: flex;
+  max-width: 400px;
+  margin: auto;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.search-bar button {
+  background: var(--primary);
+  border: none;
+  padding: 0 1rem;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  color: #252020;
+}
+
+/* Categories */
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.cat-btn {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.cat-btn.active,
+.cat-btn:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+.cat-btn i {
+  font-size: 1rem;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px var(--shadow);
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.75rem;
+}
+
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s;
+}
+
+.card:hover .card-overlay {
+  opacity: 1;
+}
+
+.card-overlay a {
+  background: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  color: var(--dark);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Sections */
+.metrics,
+.testimonials,
+.features,
+.newsletter,
+.faq {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.metrics div {
+  display: inline-block;
+  margin: 0 1.5rem;
+}
+
+.metrics h3 {
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+.testimonials blockquote {
+  background: #fff;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 600px;
+  border-left: 4px solid var(--primary);
+  font-style: italic;
+}
+
+.features > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.features i {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.newsletter input {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  min-width: 240px;
+}
+
+.newsletter button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  background: var(--primary);
+  color: #fff;
+  cursor: pointer;
+}
+
+.faq details {
+  background: #fff;
+  margin: 0.5rem auto;
+  max-width: 800px;
+  text-align: left;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.site-footer {
+  background: #111;
+  color: #bbb;
+  text-align: center;
+  padding: 1rem;
+}
+
+.site-footer .social a {
+  color: #bbb;
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.site-footer .social a:hover {
+  color: var(--primary);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hero-inner h1 {
+    font-size: 2rem;
+  }
+  .card-overlay a {
+    font-size: 0.9rem;
+  }
+}

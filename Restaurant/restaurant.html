@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LiveWeb - Restaurants</title>
+  <link rel="stylesheet" href="restaurant.css">
+  <link rel="stylesheet" href="../Header/header.css">
+</head>
+<body>
+
+ <!-- Placeholder for header -->
+ <div id="header-placeholder"></div>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <section class="hero">
+      <h2>Discover Amazing Restaurants</h2>
+      <p>Taste the world through our curated selection of restaurants!</p>
+    </section>
+
+    <section class="filters">
+      <button class="filter-btn" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="fine-dining">Fine Dining</button>
+      <button class="filter-btn" data-filter="cafes">Cafés</button>
+      <button class="filter-btn" data-filter="street-food">Street Food</button>
+    </section>
+
+    <section class="restaurant-cards" id="restaurantCards">
+
+      <!-- Cards -->
+      <div class="card" data-category="fine-dining">
+        <img src="../Images/rome-restaurant.jpeg" alt="Fine Dining">
+        <h3>La Pergola, Rome</h3>
+        <p>Michelin-starred restaurant offering gourmet Italian dishes.</p>
+        <a href="#">Reserve Now</a>
+      </div>
+
+      <div class="card" data-category="cafes">
+        <img src="../Images/blue-coffee.jpg" alt="Cozy Cafe">
+        <h3>Blue Bottle Coffee, Tokyo</h3>
+        <p>Premium coffee brewed fresh at a cozy environment.</p>
+        <a href="#">Visit</a>
+      </div>
+
+      <div class="card" data-category="street-food">
+        <img src="../Images/street-bite.jpeg" alt="Street Food">
+        <h3>Bangkok Street Bites</h3>
+        <p>Authentic Thai street food bursting with flavors.</p>
+        <a href="#">Explore</a>
+      </div>
+
+      <div class="card" data-category="fine-dining">
+        <img src="../Images/Paris-restaurant.jpg" alt="French Restaurant">
+        <h3>Le Meurice, Paris</h3>
+        <p>Elegant French fine dining in a royal setting.</p>
+        <a href="#">Reserve Now</a>
+      </div>
+
+      <div class="card" data-category="cafes">
+        <img src="../Images/NYC-restaurant.jpg" alt="Cafe">
+        <h3>Central Perk, NYC</h3>
+        <p>A warm cafe vibe made famous by FRIENDS!</p>
+        <a href="#">Visit</a>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer (Shared) -->
+  <footer class="footer">
+    <p>&copy; 2025 LiveWeb. Taste the World with Us!</p>
+  </footer>
+<script src="restaurant.js"></script>
+<script src="../Header/header.js"></script>
+</body>
+</html>
