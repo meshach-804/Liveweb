@@ -251,24 +251,6 @@ body {
   border-radius: 4px;
 }
 
-.site-footer {
-  background: #111;
-  color: #bbb;
-  text-align: center;
-  padding: 1rem;
-}
-
-.site-footer .social a {
-  color: #bbb;
-  margin: 0 0.5rem;
-  font-size: 1.2rem;
-  transition: color 0.3s;
-}
-
-.site-footer .social a:hover {
-  color: var(--primary);
-}
-
 /* Responsive */
 @media (max-width: 600px) {
   .hero-inner h1 {

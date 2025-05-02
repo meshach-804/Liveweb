@@ -1,0 +1,111 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #232323;
+  color: white;
+  padding: 60px 20px;
+  margin-top: 60px;
+}
+
+/* Footer Container Flex Layout */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* General Footer Section Styling */
+.footer-section {
+  flex: 1;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.footer-section h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #f39c12;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.footer-section p {
+  font-size: 16px;
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Links List Styling */
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin: 12px 0;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #f39c12;
+}
+
+/* Social Media Icons Styling */
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  font-size: 22px;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #444;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.social-links a:hover {
+  background-color: green;
+  transform: scale(1.1);
+}
+
+/* Footer Bottom Styling */
+.footer-bottom {
+  text-align: center;
+  margin-top: 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Contact Link Styling */
+.contact a {
+  color: #f39c12;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact a:hover {
+  color: white;
+  text-decoration: underline;
+}

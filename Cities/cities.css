@@ -118,15 +118,6 @@ body {
 }
 #newsletterForm button:hover { background:#e55a5a; }
 
-/* Footer */
-footer {
-  background:#111; color:#bbb; text-align:center; padding:1.5rem 1rem;
-}
-footer .social a {
-  margin:0 .5rem; color:#bbb; font-size:1.2rem; transition: color .3s;
-}
-footer .social a:hover { color:var(--brand-primary); }
-
 /* Responsive */
 @media (max-width:600px) {
   .hero h1 { font-size:2rem; }

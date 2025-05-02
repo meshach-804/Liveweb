@@ -26,9 +26,10 @@ body {
 }
 
 .logo a{
-  font-size: 1.8rem;
+  font-size: 2.0rem;
   font-weight: bold;
-  color: var(--dark);
+  font-family: 'Brush Script MT', cursive;
+  color: green;
   text-decoration: none;
 }
 
